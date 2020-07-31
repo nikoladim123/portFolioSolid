@@ -1,0 +1,490 @@
+header {
+  padding-top: 0.1px;
+  /* background: linear-gradient(135deg, #e6b929 0%, #e0c366 100%); */
+  background-size: 100% 100%;
+  position: relative;
+  height: calc(100vh + 6vw);
+}
+
+.videoDiv {
+  padding-top: 0.1px;
+  top: 0.9vw;
+  margin-left: 6.11vw;
+  position: relative;
+  height: 25.648vw;
+  width: 86.357vw;
+  perspective: 100vw;
+  box-shadow: 0px 9.44vw 5vw -5.59vw rgba(0, 0, 0, 0.55);
+  display: flex;
+}
+
+.bannerContainer {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.bnerImgBig {
+  position: relative;
+  /* border: 1px solid red; */
+  height: 100%;
+  width: 34.6vw;
+}
+
+.bnerImgSmall {
+  /* border: 1px solid red; */
+  position: relative;
+  height: 100%;
+  width: 23vw;
+}
+
+.bannerContainer img {
+  transition: 0.75s ease;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.solidCodeUsBlog {
+  margin-left: 5.5vw;
+  position: absolute;
+  bottom: -0.7vw;
+  z-index: 1;
+  line-height: 0.85;
+}
+
+.solidCodeUsBlog p {
+  font-size: 8.34vw;
+  margin: 0;
+  color: white;
+}
+
+.solidCodeUsBlog p:nth-child(1) {
+  margin-bottom: -0.2vw;
+  /* font-family: 'Montserrat-ExtraLight',serif; */
+  font-family: 'Roboto-Thin';
+  font-weight: 100;
+  font-family: 'Morganite-Bold';
+}
+
+.solidCodeUsBlog p:nth-child(2) {
+  /* font-family: 'Montserrat-Black',serif; */
+  font-family: 'Roboto-Black';
+  font-family: 'Morganite-Thin';
+  text-align: right;
+  color: #e49b13;
+}
+
+/* main */
+main {
+  min-height: 5vw;
+  position: relative;
+  padding-top: 0.1px;
+  padding-bottom: 0.1px;
+  /* background-color: #e0ddeb; */
+  width: 100%;
+  /* overflow: hidden; */
+  /* overflow-x: hidden; */
+  /* overflow-y: visible; */
+}
+
+.narrowWrapper {
+  position: absolute;
+  top: -6vw;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  height: 6vw;
+  /* visibility: hidden; */
+}
+
+.narrowBG {
+  box-shadow: 1.7vw 7px 50px -30px rgba(0, 0, 0, 0.75);
+  height: 200vw;
+  width: 56vw;
+  position: absolute;
+  background-color: #f2f2f2;
+  transform: rotate(18deg);
+  top: -15vw;
+  left: -36vw;
+}
+
+.portfolioLandingMainHeadingTextContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 14vw;
+}
+
+.portfolioLandingMainHeadingText {
+  font-size: 1.2vw;
+  font-family: 'Poppins-Regular';
+  color: #515151;
+  line-height: 1.2;
+  text-align: justify;
+  width: 54vw;
+}
+
+/* portfolioLandingItemSectionLeft */
+.portfolioLandingItemSectionLeft {
+  position: relative;
+  margin-bottom: 21vw;
+}
+
+.portfolioLandingItemSectionLeft::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.leftImgContainer {
+  height: 55.7813vw;
+  width: 55.78132vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+.leftImgContainer:hover .imageOverlay {
+  opacity: 0.1;
+}
+.leftImgContainer:hover .leftPortfolioText{
+  color: red;
+  transform: translate(1vw, 0);
+}
+
+
+.imageOverlay {
+  transition: 1s ease;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  /* content: ''; */
+  background: rgba(1, 255, 213, 0.8);
+}
+
+.leftImgContainerRevealDiv {
+  transition: 1s ease;
+  position: absolute;
+  width: 55.78132vw;
+  height: 55.7813vw;
+  left: 0;
+  top: 0;
+  background: rgba(1, 230, 189);
+  z-index: 3;
+}
+
+.portfolioImgNoisy {
+  width: 43.49298vw;
+  max-height: 100%;
+}
+
+.portfolioLandingItemSectionLeft {
+  position: relative;
+  /* border: 1px solid red; */
+  margin-top: 10vw;
+  /* overflow: hidden; */
+  /* overflow-x: hidden; */
+}
+
+.leftPortfolioText {
+  pointer-events: none;
+  z-index: 1;
+  transition: 1s ease;
+  text-align: right;
+  position: absolute;
+  /* margin: 0; */
+  font-size: 4.685vw;
+  mix-blend-mode: color;
+  font-family: 'Poppins-Bold';
+  line-height: 1.35;
+  /* left: 46vw; */
+  left: 24vw;
+  top: 13vw;
+  white-space: nowrap;
+}
+
+.leftPortfolioText span {
+  font-size: 2.8vw;
+  font-family: 'Poppins-Thin';
+}
+
+/* left color change white */
+.h2HolderLeft {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  pointer-events: none;
+}
+
+.h2HolderLeft .h2WhiteContainer {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  z-index: 3;
+  /* border: 1px solid red; */
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 55.78132vw;
+}
+
+.h2HolderLeft .h2WhiteContainer h2 {
+  color: white;
+}
+
+.h2HolderLeft .h2BlackContainer {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  z-index: 3;
+  /* border: 1px solid red; */
+  top: 0;
+  /* left: 50%; */
+  overflow: hidden;
+  width: calc(100vw - 55.78132vw);
+  margin-left: 55.78132vw;
+}
+
+.h2HolderLeft .h2BlackContainer h2 {
+  color: black;
+  margin-left: -55.78132vw;
+}
+
+/* left color change white */
+/* right color change white */
+.h2HolderRight {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+
+  pointer-events: none;
+}
+
+.h2HolderRight .h2WhiteContainer {
+  position: absolute;
+  /* width: 50%; */
+  height: 100%;
+  z-index: 3;
+  /* border: 1px solid red; */
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  width: 55.78132vw;
+}
+
+.h2HolderRight .h2WhiteContainer h2 {
+  color: white;
+  /* margin-left: 1vw; */
+}
+
+.h2HolderRight .h2BlackContainer {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  z-index: 3;
+  /* border: 1px solid red; */
+  top: 0;
+  right: 0;
+  /* left: 50%; */
+  overflow: hidden;
+  width: 55.78132vw;
+  right: 55.78132vw;
+}
+
+.h2HolderRight .h2BlackContainer h2 {
+  color: black;
+  position: relative;
+  margin-left: 100vw;
+  /* margin-left: 132vw; */
+}
+
+/* right color change white */
+.greenCircleText {
+  width: 20.4644vw;
+  position: absolute;
+  right: 1vw;
+  top: 0vw;
+}
+
+.simpleArc {
+  position: absolute;
+  /* border: 1px solid purple; */
+  width: 20vw;
+  height: 20vw;
+  top: -4vw;
+  right: -8vw;
+}
+
+.simpleArc span {
+  opacity: 0.3;
+  filter: blur(10px);
+  color: #96eed8;
+  transition: 2s ease;
+  font-family: 'Poppins-Regular';
+  margin: 0;
+  left: 0;
+  padding: 0px;
+  display: block;
+  position: absolute;
+  transform-origin: 1vw 10vw;
+  font-size: 2.96vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1vw;
+  height: 2vw;
+}
+
+.findOutMore {
+  /* border: 1px solid white; */
+  display: flex;
+  align-items: center;
+  position: absolute;
+  margin-top: 1vw;
+  left: 66vw;
+  top: 33vw;
+}
+
+.findOutMore p {
+  color: black;
+  font-family: 'Poppins-Regular';
+  font-size: 1.8vw;
+  margin: 0;
+  margin-right: 1vw;
+}
+
+.findMoreButOutside {
+  border-radius: 50%;
+  background-color: rgba(1, 230, 189, 0.3);
+  width: 6.368vw;
+  height: 6.368vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.findMoreButOutside:hover {
+  cursor: pointer;
+}
+
+.findMoreBut {
+  transition: 0.4s;
+  border-radius: 50%;
+  background-color: rgba(1, 230, 189);
+  width: 2.855vw;
+  height: 2.8552vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.5vw;
+}
+
+.findMoreButOutside:hover .findMoreBut {
+  width: 6.368vw;
+  height: 6.368vw;
+}
+
+/* rightImgContainer */
+.portfolioLandingItemSectionRight {}
+
+.rightImgContainer {
+  float: right;
+  justify-content: flex-start;
+}
+
+.portfolioLandingItemSectionRight .leftPortfolioText {
+  text-align: left;
+  left: auto;
+  /* right: 48.13vw; */
+  position: relative;
+  right: 10vw;
+  margin-left: calc(100vw - 55.78132vw);
+}
+
+.portfolioLandingItemSectionRight .simpleArc {
+  right: auto;
+  left: 10vw;
+}
+
+.portfolioLandingItemSectionRight .findOutMore {
+  left: 11vw;
+}
+
+/* red */
+.simpleArcRed span {
+  color: #fecdd1;
+}
+
+.imageOverlayRed {
+  background: rgba(255, 70, 68, 0.88);
+}
+
+.leftImgContainerRevealDivRed {
+  background-color: rgba(255, 70, 68);
+  left: auto;
+  right: 0;
+}
+
+.findMoreButOutsidered {
+  background-color: rgba(255, 70, 68, 0.3);
+}
+
+.findMoreButOutsidered .findMoreBut {
+  background-color: rgba(255, 70, 68);
+}
+
+/* orange */
+.simpleArcOrange span {
+  color: #fdedb2;
+}
+
+.imageOverlayOrange {
+  background-color: rgba(252, 236, 177, 0.88);
+}
+
+.leftImgContainerRevealDivOrange {
+  background-color: #fdedb2;
+}
+
+.findMoreButOutsideOrange {
+  background-color: rgba(252, 236, 177, 0.33);
+}
+
+.findMoreButOrange {
+  background-color: rgba(252, 236, 177);
+}
+
+/* purple */
+.imageOverlayPurple {
+  background: rgba(111, 1, 255, 0.88);
+}
+
+.leftImgContainerRevealDivPurple {
+  background: rgba(111, 1, 255);
+  left: auto;
+  right: 0;
+}
+
+.simpleArcPurple span {
+  color: #6f01ff;
+}
+
+.findMoreButOutsidePurple {
+  background: rgba(111, 1, 255, 0.33);
+}
+
+.findMoreButPurple {
+  background: rgba(111, 1, 255);
+}
